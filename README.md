@@ -12,13 +12,20 @@ I build AI products from the first customer conversation through architecture, i
 
 ## Selected work
 
-| Project | The problem it tackles | Engineering worth opening |
-| :--- | :--- | :--- |
-| **[RepoGauntlet](https://github.com/shi1720/repo-gauntlet)** | A coding benchmark needs trustworthy tests before it can judge an agent. | Python control plane; five language environments; broken, incomplete and golden controls; reproducible reports. |
-| **[OfferLoop](https://github.com/shi1720/offerloop)** | Job applications disappear into spreadsheets and missed follow-ups. | FastAPI, React and Google Cloud; grounded AI drafts; retry-safe imports and scheduled reminders. |
-| **[StepFree](https://github.com/shi1720/stepfree)** | Accessibility fixes need proof that they helped without damaging the page. | Agent-assisted repair, independent scans, content-integrity checks and a human review path. |
-| **[Plot Twist](https://github.com/shi1720/plottwist)** | A personality quiz can be playful without hiding how it reached its answer. | TypeScript scoring, a Python reference implementation, privacy-conscious sharing and browser-generated cards. |
-| **[Baggage Claim](https://baggage-claim-shi1720.sg127977958.chatgpt.site/)** | Travel recommendations leave out how a city actually felt. | Anonymous trip reports, a 3D globe, weekly reveals and a persistent database. Live app; source stays private. |
+### [RepoGauntlet](https://github.com/shi1720/repo-gauntlet)
+A coding benchmark needs trustworthy tests before it can judge an agent. Python orchestration, five language environments, broken and golden controls, reproducible reports.
+
+### [OfferLoop](https://github.com/shi1720/offerloop)
+A job-search CRM for applications, follow-ups and the work between them. FastAPI, React and Google Cloud, with grounded AI drafts, retry-safe imports and scheduled reminders.
+
+### [StepFree](https://github.com/shi1720/stepfree)
+Accessibility repairs with evidence that they helped. Coding agents, independent scans, content-integrity checks and a human review path.
+
+### [Plot Twist](https://github.com/shi1720/plottwist)
+A personality quiz that shows its working. TypeScript scoring, a Python reference implementation, private local answers and browser-generated share cards.
+
+### [Baggage Claim](https://baggage-claim-shi1720.sg127977958.chatgpt.site/)
+Travel recommendations leave out how a city actually felt. Anonymous trip reports, a 3D globe, weekly reveals and a persistent database. Live app; source stays private.
 
 [Browse the public project index](docs/projects.md) for smaller tools, experiments and their status.
 
