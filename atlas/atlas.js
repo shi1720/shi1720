@@ -1,9 +1,9 @@
 import { projects } from './projects.js';
 const districts = {
-  agents: { label: 'Agent infrastructure', color: '#81e9cd', x: -155, z: -145 },
-  systems: { label: 'Applied systems', color: '#ffb16e', x: 170, z: -100 },
-  human: { label: 'Human experiences', color: '#b6a0ff', x: 135, z: 185 },
-  learning: { label: 'Learning tools', color: '#79bfff', x: -170, z: 185 },
+  agents: { label: 'Agent infrastructure', color: '#426b56', x: -155, z: -145 },
+  systems: { label: 'Applied systems', color: '#895936', x: 170, z: -100 },
+  human: { label: 'Human experiences', color: '#725d88', x: 135, z: 185 },
+  learning: { label: 'Learning tools', color: '#456b85', x: -170, z: 185 },
 };
 const byId = new Map(projects.map(p => [p.id, p]));
 const canvas = document.querySelector('#city');
@@ -48,7 +48,7 @@ function cuboid(x, z, half, base, height, color, active = false) {
   const bottom = [[x-half,base,z-half],[x+half,base,z-half],[x+half,base,z+half],[x-half,base,z+half]];
   const top = bottom.map(([a,,c]) => [a,base+height,c]);
   const faces = [0,1,2,3].map(i => ({i, depth:(point(...bottom[i]).depth+point(...bottom[(i+1)%4]).depth)/2})).sort((a,b)=>b.depth-a.depth);
-  for (const {i} of faces) { const j=(i+1)%4;path([point(...bottom[i]),point(...bottom[j]),point(...top[j]),point(...top[i])],color+(active?'bf':'66'),.7,'#101e28ef',true); }
+  for (const {i} of faces) { const j=(i+1)%4;path([point(...bottom[i]),point(...bottom[j]),point(...top[j]),point(...top[i])],color+(active?'bf':'66'),.7,'#eee8ddef',true); }
   path(top.map(p=>point(...p)),color+(active?'ff':'bb'),1.1,color+(active?'4a':'24'),true);
   const floors = Math.floor(height/12);
   for(let f=1;f<floors;f++) for(let i=0;i<4;i++) {
@@ -61,12 +61,12 @@ function cuboid(x, z, half, base, height, color, active = false) {
 function render() {
   if (!ctx) return;
   ctx.clearRect(0,0,w,h);
-  const mist=ctx.createRadialGradient(w*.54,h*.51,10,w*.54,h*.51,w*.4);mist.addColorStop(0,'#20473b24');mist.addColorStop(1,'#070d1200');ctx.fillStyle=mist;ctx.fillRect(0,0,w,h);
-  for(let i=0;i<90;i++){const x=(hash(`s${i}`)*.6180339%1)*w,y=(hash(`y${i}`)*.41421%1)*h;ctx.fillStyle=i%7===0?'#b8dac45c':'#81b1c127';ctx.fillRect(x,y,i%7===0?1.5:1,1);}
-  for(let x=-450;x<=450;x+=30)line([x,-8,-450],[x,-8,450],'#38505716',.6);
-  for(let z=-450;z<=450;z+=30)line([-450,-8,z],[450,-8,z],'#38505716',.6);
-  for(const radius of [350,390,425])ring(0,-6,0,radius,'#68998c24');
-  for(let i=0;i<100;i++){let a=i/100*Math.PI*2;line([Math.cos(a)*425,-6,Math.sin(a)*425],[Math.cos(a)*(i%5===0?437:430),-6,Math.sin(a)*(i%5===0?437:430)],'#80afa33b',.8);}
+  const mist=ctx.createRadialGradient(w*.54,h*.51,10,w*.54,h*.51,w*.4);mist.addColorStop(0,'#a2b69a26');mist.addColorStop(1,'#f5f1e900');ctx.fillStyle=mist;ctx.fillRect(0,0,w,h);
+  for(let i=0;i<90;i++){const x=(hash(`s${i}`)*.6180339%1)*w,y=(hash(`y${i}`)*.41421%1)*h;ctx.fillStyle=i%7===0?'#7a8b6c5c':'#7d8d7727';ctx.fillRect(x,y,i%7===0?1.5:1,1);}
+  for(let x=-450;x<=450;x+=30)line([x,-8,-450],[x,-8,450],'#89927e22',.6);
+  for(let z=-450;z<=450;z+=30)line([-450,-8,z],[450,-8,z],'#89927e22',.6);
+  for(const radius of [350,390,425])ring(0,-6,0,radius,'#89957c40');
+  for(let i=0;i<100;i++){let a=i/100*Math.PI*2;line([Math.cos(a)*425,-6,Math.sin(a)*425],[Math.cos(a)*(i%5===0?437:430),-6,Math.sin(a)*(i%5===0?437:430)],'#72886d55',.8);}
   for(const [key,d] of Object.entries(districts)) {
     const opacity=filter==='all'||filter===key?'':'20';
     ring(d.x,-2,d.z,key==='systems'?143:114,d.color+(opacity||'35'));
@@ -77,7 +77,7 @@ function render() {
   }
   for(const n of nodes){const d=districts[n.district];line([d.x,0,d.z],[n.x,0,n.z],n.color+(matches(n)?'40':'0d'));}
   // A shared workshop at the center; project-to-district paths express themes.
-  for(let i=0;i<4;i++)ring(0,i*7,0,46-i*4,'#81e9cd'+['32','48','66','9a'][i]);
+  for(let i=0;i<4;i++)ring(0,i*7,0,46-i*4,'#426b56'+['32','48','66','9a'][i]);
   const ordered=[...nodes].sort((a,b)=>point(b.x,0,b.z).depth-point(a.x,0,a.z).depth);
   for(const n of ordered) {
     const active=n.id===selected,shown=matches(n);ctx.globalAlpha=shown?1:.1;
@@ -88,12 +88,12 @@ function render() {
     if(n.seed%2===0)cuboid(n.x,n.z,n.size*.4,n.height+8,13,n.color,active);
     const top=point(n.x,n.height+20,n.z);n.screen=top;
     line([n.x,n.height+8,n.z],[n.x,n.height+25,n.z],n.color+'ae',.8);
-    ctx.fillStyle=n.color;ctx.shadowColor=n.color;ctx.shadowBlur=active?18:6;ctx.beginPath();ctx.arc(top.x,top.y,active?3.5:1.6,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;
-    if(active||n.id===hovered){ring(n.x,n.height+26,n.z,12+Math.sin(phase*1.4)*2,n.color+'b0');ctx.font='12px Consolas,monospace';ctx.textAlign='center';const tw=ctx.measureText(n.name).width;ctx.fillStyle='#070d12e8';ctx.fillRect(top.x-tw/2-8,top.y-34,tw+16,23);ctx.fillStyle=n.color;ctx.fillText(n.name,top.x,top.y-18);}
+    ctx.fillStyle=n.color;ctx.shadowColor=n.color;ctx.shadowBlur=active?5:0;ctx.beginPath();ctx.arc(top.x,top.y,active?3.5:1.6,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;
+    if(active||n.id===hovered){ring(n.x,n.height+26,n.z,12+Math.sin(phase*1.4)*2,n.color+'b0');ctx.font='12px Consolas,monospace';ctx.textAlign='center';const tw=ctx.measureText(n.name).width;ctx.fillStyle='#fbf8f0f2';ctx.fillRect(top.x-tw/2-8,top.y-34,tw+16,23);ctx.fillStyle=n.color;ctx.fillText(n.name,top.x,top.y-18);}
     ctx.globalAlpha=1;
   }
   // Tracers are visual motion, not simulated traffic or fabricated activity.
-  for(let i=0;i<16;i++){const a=i*.41+phase*.12,rad=390;const p=point(Math.cos(a)*rad,4,Math.sin(a)*rad);ctx.fillStyle='#81e9cd88';ctx.beginPath();ctx.arc(p.x,p.y,1.5,0,Math.PI*2);ctx.fill();}
+  for(let i=0;i<16;i++){const a=i*.41+phase*.12,rad=390;const p=point(Math.cos(a)*rad,4,Math.sin(a)*rad);ctx.fillStyle='#426b5688';ctx.beginPath();ctx.arc(p.x,p.y,1.5,0,Math.PI*2);ctx.fill();}
   document.querySelector('#coordinates').textContent=`AZ ${String(Math.round(((angle*180/Math.PI)%360+360)%360)).padStart(3,'0')}° / EL ${String(Math.round(pitch*180/Math.PI)).padStart(2,'0')}°`;
 }
 function resize(){const rect=canvas.getBoundingClientRect();w=rect.width;h=rect.height;const dpr=Math.min(devicePixelRatio||1,2);canvas.width=w*dpr;canvas.height=h*dpr;ctx?.setTransform(dpr,0,0,dpr,0,0);scale=Math.min(w<680?w/780:w/1040,h/690);dirty=true;}
