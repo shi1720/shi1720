@@ -1,0 +1,1 @@
+{"name":"working-atlas-profile","private":true,"type":"module","scripts":{"test":"node --test tests/catalog.test.mjs","test:browser":"playwright test"},"devDependencies":{"@axe-core/playwright":"4.13.0","@playwright/test":"1.63.0"}}
