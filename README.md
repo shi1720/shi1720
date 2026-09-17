@@ -1,46 +1,49 @@
-<img src="assets/header.svg" alt="Shivam Gupta. Applied AI, thoughtful products, working software." width="100%">
+<a href="https://shi1720.github.io/shi1720/"><img src="assets/header.svg" alt="Shivam Gupta — enter the Working Atlas, an interactive city of 29 public projects" width="100%"></a>
 
-# Shivam Gupta
+<p align="center">
+  <a href="https://shi1720.github.io/shi1720/"><strong>Explore the Working Atlas ↗</strong></a> &nbsp; · &nbsp;
+  <a href="docs/projects.md">Project index</a> &nbsp; · &nbsp;
+  <a href="https://www.linkedin.com/in/shivamgupta-ai/">LinkedIn</a> &nbsp; · &nbsp;
+  <a href="mailto:shivam.work.eml@gmail.com">Email</a>
+</p>
 
-**Applied AI engineer · Product builder · Founder, Siloed**
+### I build the product. And the evidence that it works.
 
-I turn “someone should build this” into “try this link.”
+I'm **Shivam**, an applied AI engineer, product builder, and founder of **Siloed**. I work from the first customer conversation through architecture, implementation, evaluation, and deployment.
 
-I build AI products from the first customer conversation through architecture, implementation, evaluation and deployment. My work spans education, enterprise software and small experiments with a point of view. I care about useful products, clear interfaces and evidence that the system works.
+A recurring question in my work: **what happens when the happy path ends?** An agent retries a payment. A clinic can't match a recalled lot. A browser loses the response after saving. Those edges are often where the useful engineering begins.
 
-[LinkedIn](https://www.linkedin.com/in/shivamgupta-ai/) · [Email](mailto:shivam.work.eml@gmail.com) · Dubai / Delhi
+The atlas above is a small expression of that approach: a procedural city generated from my public projects. Every building opens real source. No image assets, 3D library, account, or API key required. [How it works →](atlas/README.md)
 
-## Selected work
+### A few places to start
 
-### [RepoGauntlet](https://github.com/shi1720/repo-gauntlet)
-A coding benchmark needs trustworthy tests before it can judge an agent. Python orchestration, five language environments, broken and golden controls, reproducible reports.
+| If you're interested in… | Open this | What to look for |
+| :--- | :--- | :--- |
+| **Trustworthy agent evaluation** | [RepoGym](https://github.com/shi1720/repogym) · [RepoGauntlet](https://github.com/shi1720/repo-gauntlet) | Executable repository tasks, broken and golden controls, reproducible evaluation. |
+| **Finding the smallest failure** | [Casecrop](https://github.com/shi1720/casecrop) | Reduce an event trace while preserving dependencies and the same failure. |
+| **Agents under pressure** | [Toolstorm](https://github.com/shi1720/toolstorm) | Deterministic tool failures, side-effect contracts, strict offline replay. |
+| **Useful voice workflows** | [Benchback](https://github.com/shi1720/AssemblyAI) · [OffHire](https://github.com/shi1720/OffHire) | Parts-core returns and equipment closeouts, with transcript-grounded evidence. |
+| **Software with a human point of view** | [Unpause](https://github.com/shi1720/RevenueCat-Shipaton) · [Plot Twist](https://github.com/shi1720/plottwist) | Resume an unfinished creative project, or meet a personality quiz that shows its working. |
+| **Repair you can inspect** | [StepFree](https://github.com/shi1720/stepfree) | Accessibility fixes with independent scans, content-integrity checks, and review. |
 
-### [OfferLoop](https://github.com/shi1720/offerloop)
-A job-search CRM for applications, follow-ups and the work between them. FastAPI, React and Google Cloud, with grounded AI drafts, retry-safe imports and scheduled reminders.
+**Also worth a look:** [Mixed Signals](https://github.com/shi1720/mixed-signals) maps anonymous experiences onto a globe. [OfferLoop](https://github.com/shi1720/OfferLoop-Job-CRM) makes the work between job applications visible. [KindHandoff Guard](https://github.com/shi1720/kindhandoff-guard) packages explicit handoff acceptance into a small TypeScript library.
 
-### [StepFree](https://github.com/shi1720/stepfree)
-Accessibility repairs with evidence that they helped. Coding agents, independent scans, content-integrity checks and a human review path.
+### Work beyond the public repositories
 
-### [Plot Twist](https://github.com/shi1720/plottwist)
-A personality quiz that shows its working. TypeScript scoring, a Python reference implementation, private local answers and browser-generated share cards.
+**Khoros** — Led AI and analytics engineering for the IRIS AI modernization, working with five engineers and a designer.
 
-### [Baggage Claim](https://baggage-claim-shi1720.sg127977958.chatgpt.site/)
-Travel recommendations leave out how a city actually felt. Anonymous trip reports, a 3D globe, weekly reveals and a persistent database. Live app; source stays private.
+**2 Hour Learning** — Helped build applications serving 5,000+ learners and co-developed Incept, a content-generation pipeline that saved $1M+ annually.
 
-[Browse the public project index](docs/projects.md) for smaller tools, experiments and their status.
+**Siloed** — Founded an AI product consultancy and delivered work for 10+ clients across finance, healthcare, SaaS, and other industries.
 
-## Beyond the public repos
+These are contributions to professional teams and client projects; their implementations remain private.
 
-- **Khoros:** led AI and analytics engineering for the IRIS AI modernization, working across a team of five engineers and a designer.
-- **2 Hour Learning:** helped build learning applications serving 5,000+ learners and co-developed Incept, a content-generation pipeline that saved $1M+ annually.
-- **Siloed:** founded an AI product consultancy and delivered work for 10+ clients across finance, healthcare, SaaS and other industries.
+### The tools follow the problem
 
-These are contributions to professional teams and client projects. Their implementation remains private.
+Python · TypeScript · React · FastAPI · PostgreSQL · Google Cloud · evaluation harnesses · LLM APIs
 
-## How I work
+I use AI-assisted development and take responsibility for the result. Start small, exercise the failure cases, and document what the next person needs to know.
 
-Start with the user's problem. Make a small version work. Measure failure cases. Improve the architecture where the evidence calls for it. Document the decisions someone else will have to live with.
+---
 
-My usual tools are **Python, TypeScript, FastAPI, React, PostgreSQL and Google Cloud**, with LLM APIs and evaluation harnesses where they earn their place. I use AI-assisted development and take responsibility for the result.
-
-Outside work, I travel, follow interesting detours and occasionally turn them into another project.
+<p align="center"><sub>Dubai / Delhi · Interested in difficult, useful problems. <a href="mailto:shivam.work.eml@gmail.com">Let's talk.</a><br>The atlas is a September 2026 snapshot of public work. Repository READMEs describe each project's scope, setup, and limitations.</sub></p>
