@@ -1,10 +1,11 @@
-<a href="https://shi1720.github.io/shi1720/"><img src="assets/header.svg" alt="Shivam Gupta — enter the Working Atlas, an interactive city of 29 public projects" width="100%"></a>
+<a href="https://shivam-web-app.web.app"><img src="assets/studio.svg" alt="Shivam Gupta — enter the interactive studio: projects, AI guide, and a working agent lab" width="100%"></a>
 
 <p align="center">
-  <a href="https://shi1720.github.io/shi1720/"><strong>Explore the Working Atlas ↗</strong></a> &nbsp; · &nbsp;
-  <a href="docs/projects.md">Project index</a> &nbsp; · &nbsp;
+  <a href="https://shivam-web-app.web.app"><strong>Enter the studio ↗</strong></a> &nbsp; · &nbsp;
+  <a href="https://shivam-web-app.web.app/#work">Explore the work</a> &nbsp; · &nbsp;
+  <a href="https://shivam-web-app.web.app/#lab">Run the agent lab</a> &nbsp; · &nbsp;
   <a href="https://www.linkedin.com/in/shivamgupta-ai/">LinkedIn</a> &nbsp; · &nbsp;
-  <a href="mailto:shivam.work.eml@gmail.com">Email</a>
+  <a href="mailto:shivam1720406@gmail.com">Email</a>
 </p>
 
 ### I build the product. And the evidence that it works.
@@ -13,7 +14,9 @@ I'm **Shivam**, an applied AI engineer, product builder, and founder of **Siloed
 
 A recurring question in my work: **what happens when the happy path ends?** An agent retries a payment. A clinic can't match a recalled lot. A browser loses the response after saving. Those edges are often where the useful engineering begins.
 
-The atlas above is a small expression of that approach: a procedural city generated from my public projects. Every building opens real source. No image assets, 3D library, account, or API key required. [How it works →](atlas/README.md)
+The **[studio](https://shivam-web-app.web.app)** lets you explore a folded 3D map of my projects, ask a source-grounded AI guide about the work, and run a local agent-reliability experiment. The Python export reproduces what the browser shows.
+
+An earlier creative-coding experiment, the **[Working Atlas](https://shi1720.github.io/shi1720/)**, remains available: an interactive city generated from the same public project collection. [How it works →](atlas/README.md)
 
 ### A few places to start
 
@@ -38,6 +41,12 @@ The atlas above is a small expression of that approach: a procedural city genera
 
 These are contributions to professional teams and client projects; their implementations remain private.
 
+### Build with me
+
+I’m open to **applied AI and product engineering roles**, remote work and relocation. Through **Siloed**, I help teams design and ship AI products, operational agents, internal tools, evaluation systems, and AI adoption programs.
+
+[Discuss a role or a project →](https://shivam-web-app.web.app/#contact)
+
 ### The tools follow the problem
 
 Python · TypeScript · React · FastAPI · PostgreSQL · Google Cloud · evaluation harnesses · LLM APIs
@@ -46,4 +55,4 @@ I use AI-assisted development and take responsibility for the result. Start smal
 
 ---
 
-<p align="center"><sub>Dubai / Delhi · Interested in difficult, useful problems. <a href="mailto:shivam.work.eml@gmail.com">Let's talk.</a><br>The atlas is a September 2026 snapshot of public work. Repository READMEs describe each project's scope, setup, and limitations.</sub></p>
+<p align="center"><sub>Dubai / Delhi · Interested in difficult, useful problems. <a href="mailto:shivam1720406@gmail.com">Let's talk.</a><br>The studio and atlas are September 2026 snapshots of public work. Repository READMEs describe each project's scope, setup, and limitations.</sub></p>
