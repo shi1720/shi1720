@@ -20,7 +20,7 @@ The source behind [the Working Atlas](https://shi1720.github.io/shi1720/). This 
 | --- | --- |
 | [Benchback](https://github.com/shi1720/AssemblyAI) | Benchback: voice-operated parts-core returns and supplier-credit reconciliation. Built with AssemblyAI, Firebase and Next.js. |
 | [Granted Robotics](https://github.com/shi1720/AI-Infra-Summit-Hackathon) | Granted Robotics: auditable dual-SO101 simulation, learned OpenVINO policy proposals, and fault recovery evidence. |
-| [RecallRoom](https://github.com/shi1720/Nebius-x-NVIDIA) | RecallRoom — evidence-backed food recall investigations using NVIDIA Nemotron on Nebius Token Factory |
+| [RecallRoom](https://github.com/shi1720/Nebius-x-NVIDIA) | RecallRoom: evidence-backed food recall investigations using NVIDIA Nemotron on Nebius Token Factory |
 | [Lotlight](https://github.com/shi1720/DSH-Hacks-V2) | Evidence-backed medical recall review for small clinics. Browser AI, exact identifier checks, human source review and documented response. |
 | [Annex](https://github.com/shi1720/LexHack) | Compile AI regulation into executable controls with source evidence and reproducible benchmarks. |
 | [Raksha](https://github.com/shi1720/YC-Fall-2026-x-Moss) | A real-time scam-call shield: a second listener using Moss retrieval and explicit evidence. |

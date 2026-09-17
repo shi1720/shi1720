@@ -5,7 +5,7 @@ projects = json.loads((ROOT / 'atlas/projects.js').read_text().split('=', 1)[1].
 colors = {'agents':'#81e9cd','systems':'#ffb16e','human':'#b6a0ff','learning':'#79bfff'}
 centers = {'agents':(-155,-145),'systems':(170,-100),'human':(135,185),'learning':(-170,185)}
 svg = ['''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
-<title id="title">Shivam Gupta — The Working Atlas</title><desc id="desc">An illustrated city of 29 public projects across agent infrastructure, applied AI, human experiences and learning tools. Open the interactive atlas to explore the source.</desc>
+<title id="title">Shivam Gupta: The Working Atlas</title><desc id="desc">An illustrated city of 29 public projects across agent infrastructure, applied AI, human experiences and learning tools. Open the interactive atlas to explore the source.</desc>
 <defs><radialGradient id="glow"><stop stop-color="#15352e"/><stop offset="1" stop-color="#070d12"/></radialGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#81e9cd" stroke-opacity=".045"/></pattern></defs>
 <rect width="1200" height="560" fill="#070d12"/><rect x="365" y="0" width="835" height="560" fill="url(#glow)"/><rect width="1200" height="560" fill="url(#grid)"/>
 <style>.signal{stroke-dasharray:7 54;animation:flow 18s linear infinite}@keyframes flow{to{stroke-dashoffset:-610}}@media(prefers-reduced-motion:reduce){.signal{animation:none}}</style>''']

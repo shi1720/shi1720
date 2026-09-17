@@ -19,7 +19,7 @@ export const projects = [
     "id": "Nebius-x-NVIDIA",
     "name": "RecallRoom",
     "district": "systems",
-    "description": "RecallRoom — evidence-backed food recall investigations using NVIDIA Nemotron on Nebius Token Factory",
+    "description": "RecallRoom: evidence-backed food recall investigations using NVIDIA Nemotron on Nebius Token Factory",
     "language": "JavaScript",
     "url": "https://github.com/shi1720/Nebius-x-NVIDIA"
   },
