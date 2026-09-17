@@ -10,7 +10,7 @@ The browser projects 3D coordinates onto a 2D canvas, depth-sorts the buildings,
 
 `projects.js` contains a curated, public-only catalog. No GitHub token, runtime API, remote font, image library, or 3D framework is needed. The HTML directory provides the same source links and selection controls as the canvas. If JavaScript is unavailable, the page links to the Markdown index.
 
-Drag to orbit, choose a district, search the directory, or select a building. The controls and directory work with the keyboard. Reduced-motion preferences stop the automatic orbit; the pause control also stops the tracers. The catalog snapshot is September 2026.
+Drag to orbit, choose a district, search the directory, or select a building. The controls and directory work with the keyboard. Reduced-motion preferences stop the automatic orbit; the pause control also stops the tracers.
 
 ## Run and verify
 

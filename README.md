@@ -1,4 +1,4 @@
-<a href="https://shivamgupta.web.app"><img src="assets/studio.svg" alt="Shivam Gupta — enter the interactive studio: projects, AI guide, and a working agent lab" width="100%"></a>
+<a href="https://shivamgupta.web.app"><img src="assets/studio.svg" alt="Enter Shivam Gupta's interactive studio: projects, AI guide, and a working agent lab" width="100%"></a>
 
 <p align="center">
   <a href="https://shivamgupta.web.app"><strong>Enter the studio ↗</strong></a> &nbsp; · &nbsp;
@@ -33,11 +33,11 @@ An earlier creative-coding experiment, the **[Working Atlas](https://shi1720.git
 
 ### Work beyond the public repositories
 
-**Khoros** — Led AI and analytics engineering for the IRIS AI modernization, working with five engineers and a designer.
+**Khoros:** Led AI and analytics engineering for the IRIS AI modernization, working with five engineers and a designer.
 
-**2 Hour Learning** — Helped build applications serving 5,000+ learners and co-developed Incept, a content-generation pipeline that saved $1M+ annually.
+**2 Hour Learning:** Helped build applications serving 5,000+ learners and co-developed Incept, a content-generation pipeline that saved $1M+ annually.
 
-**Siloed** — Founded an AI product consultancy and delivered work for 10+ clients across finance, healthcare, SaaS, and other industries.
+**Siloed:** Founded an AI product consultancy and delivered work for 10+ clients across finance, healthcare, SaaS, and other industries.
 
 These are contributions to professional teams and client projects; their implementations remain private.
 
@@ -47,12 +47,14 @@ I’m open to **applied AI and product engineering roles**, remote work and relo
 
 [Discuss a role or a project →](https://shivamgupta.web.app/#contact)
 
-### The tools follow the problem
+### From the first question to a product people use
 
-Python · TypeScript · React · FastAPI · PostgreSQL · Google Cloud · evaluation harnesses · LLM APIs
+I work across product and engineering: talking to customers, finding the problem worth solving, shaping the roadmap, and turning priorities into work a team can deliver. I stay involved through implementation, launch, and adoption, using feedback to improve the product and connect technical decisions to customer value and commercial goals.
 
-I use AI-assisted development and take responsibility for the result. Start small, exercise the failure cases, and document what the next person needs to know.
+I'm proficient with **Cursor, Codex, Claude Code, and Cowork**. I use AI tools to research, plan, build, debug, and review work. The skill is in framing the task, supplying the right context, delegating clearly, and checking the result. I take responsibility for the architecture, quality, and product decisions.
+
+My engineering foundation includes **Python and TypeScript, React and Next.js, FastAPI, PostgreSQL, Google Cloud and Firebase**, alongside LLM integrations and evaluation harnesses. I choose the stack around the product, test how it behaves when things go wrong, and document what the next person needs to know.
 
 ---
 
-<p align="center"><sub>Dubai / Delhi · Interested in difficult, useful problems. <a href="mailto:shivam1720406@gmail.com">Let's talk.</a><br>The studio and atlas are September 2026 snapshots of public work. Repository READMEs describe each project's scope, setup, and limitations.</sub></p>
+<p align="center"><sub>Dubai / Delhi · Interested in difficult, useful problems. <a href="mailto:shivam1720406@gmail.com">Let's talk.</a><br>Repository READMEs describe each project's scope, setup, and limitations.</sub></p>
