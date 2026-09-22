@@ -1,4 +1,4 @@
-name: Working Atlas
+name: The Possibility Engine
 on:
   push:
     branches: [main]
@@ -22,13 +22,15 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: python3 scripts/render-profile.py && git diff --exit-code -- assets/header.svg
-      - run: npx playwright install --with-deps chromium
+      - run: python3 scripts/render-engine.py && git diff --exit-code -- assets/engine.svg docs/universe.md
+      - run: npx playwright install --with-deps chromium webkit
       - run: npm run test:browser
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: atlas-browser-evidence
           path: test-results/
+          retention-days: 3
       - uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main'
         with:

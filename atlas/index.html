@@ -1,30 +1,284 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Working Atlas: Shivam Gupta</title>
-<meta name="description" content="Explore Shivam Gupta's public projects as an interactive city: agent evaluation, useful AI systems, human experiences and learning tools.">
-<meta name="theme-color" content="#f5f1e9">
-<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
-</head>
-<body>
-<a class="skip" href="#catalog">Skip to project directory</a>
-<header><a class="identity" href="https://github.com/shi1720" aria-label="Shivam Gupta on GitHub"><span class="monogram">sg<span>↗</span></span><span>SHIVAM GUPTA<small>Applied AI · Product engineering</small></span></a><nav aria-label="Main"><a href="#catalog">Project index <span>↙</span></a><a href="https://www.linkedin.com/in/shivamgupta-ai/">Connect <span>↗</span></a><a href="https://github.com/shi1720/shi1720/tree/main/atlas">View source <span>↗</span></a></nav></header>
-<main>
-<section class="atlas" aria-labelledby="atlas-title">
-<div class="intro"><div class="eyebrow"><span class="cross">+</span> FIELD NOTES FROM A BUILDER / 01</div><h1 id="atlas-title">The working<br><em>atlas.</em></h1><p>A city of ideas<br>that became software.</p></div>
-<canvas id="city" role="img" aria-label="An orbiting three-dimensional map of public projects. Use the project directory below for accessible exploration."></canvas>
-<div class="coordinates" aria-hidden="true"><span>IDEA → SYSTEM → EVIDENCE</span><span id="coordinates">AZ 032° / EL 030°</span></div>
-<div class="districts" role="group" aria-label="Filter by district"><button data-district="all" aria-label="All districts" aria-pressed="true">All districts</button><button data-district="agents" aria-label="Agent infrastructure" aria-pressed="false"><i class="agents"></i>Agent infrastructure</button><button data-district="systems" aria-label="Applied systems" aria-pressed="false"><i class="systems"></i>Applied systems</button><button data-district="human" aria-label="Human experiences" aria-pressed="false"><i class="human"></i>Human experiences</button><button data-district="learning" aria-label="Learning tools" aria-pressed="false"><i class="learning"></i>Learning tools</button></div>
-<aside class="inspector" aria-label="Selected project"><div class="inspector-top"><span id="project-sector">AGENT INFRASTRUCTURE</span><span id="project-number">01 / 29</span></div><h2 id="project-name">RepoGym</h2><p id="project-description">Turn any git repository into a verifiable environment for coding agents.</p><div class="project-meta"><span id="project-language">Python</span><span>PUBLIC SOURCE</span></div><a id="project-source" href="https://github.com/shi1720/repogym">Explore the repository <span>↗</span></a><div class="pager"><button id="previous" aria-label="Select previous project">←</button><span>MOVE THROUGH THE CITY</span><button id="next" aria-label="Select next project">→</button></div></aside>
-<div class="controls" role="group" aria-label="Atlas controls"><button id="motion" aria-pressed="false">Pause orbit</button><button id="zoom-out" aria-label="Zoom out">−</button><button id="zoom-in" aria-label="Zoom in">+</button><button id="reset">Reset view</button></div>
-<p class="drag-hint">DRAG TO ORBIT · SELECT A BUILDING</p>
-<div class="map-caption">A procedural map of public work.<br>Geometry is expressive; connections denote shared themes.</div>
-</section>
-<section class="statement"><span class="eyebrow">THE THREAD THROUGH IT ALL</span><h2>Make it useful.<br>Then make it <em>hold up.</em></h2><p>I build from the first problem through the product, the infrastructure, and the tests that tell us where it breaks. This is a field guide to that work: experiments, tools, and applications with inspectable source.</p></section>
-<section id="catalog" class="catalog" aria-labelledby="catalog-title"><div class="section-heading"><div><span class="eyebrow">EXPLORE AT GROUND LEVEL</span><h2 id="catalog-title">The project index<span id="count">29</span></h2></div><label class="search-label">Find a project<input id="search" type="search" placeholder="Name, idea, or language…" autocomplete="off"></label></div><p id="results" role="status" aria-live="polite"></p><div id="project-list" class="project-list"></div><noscript><p>The interactive atlas needs JavaScript. <a href="https://github.com/shi1720/shi1720/blob/main/docs/projects.md">Read the complete project index on GitHub.</a></p></noscript></section>
-<section class="about"><span class="eyebrow">BEHIND THE ATLAS</span><h2>Shivam Gupta</h2><p>Applied AI engineer, product builder, and founder of Siloed.<br>Work across education, enterprise systems, and ideas worth trying.</p><a href="mailto:shivam.work.eml@gmail.com">Let’s build something useful. <span>↗</span></a></section>
-</main>
-<footer><span>SHIVAM GUPTA / THE WORKING ATLAS</span><span>PUBLIC PROJECTS · OPEN TO EXPLORE</span><a href="https://github.com/shi1720/shi1720/tree/main/atlas">Built with code. Open the source ↗</a></footer>
-<script type="module" src="atlas.js"></script>
-</body></html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The Possibility Engine — Shivam Gupta</title>
+    <meta
+      name="description"
+      content="43 projects. Five fields of inquiry. One code-built, shape-shifting universe. Explore the work of Shivam Gupta, applied AI engineer and product builder."
+    />
+    <meta name="theme-color" content="#090c10" />
+    <meta property="og:title" content="The Possibility Engine — Shivam Gupta" />
+    <meta
+      property="og:description"
+      content="A kinetic index of useful software, curious experiments, and the evidence behind them."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="observatory.css" />
+  </head>
+  <body>
+    <a class="skip" href="#work">Skip to the project index</a>
+    <header class="masthead">
+      <a
+        class="identity"
+        href="https://github.com/shi1720"
+        aria-label="Shivam Gupta on GitHub"
+        ><span class="sigil" aria-hidden="true"
+          >s<span>g</span><sup>↗</sup></span
+        ><span
+          >SHIVAM GUPTA<small>APPLIED AI & PRODUCT ENGINEERING</small></span
+        ></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#work">The work <span>43</span></a
+        ><a href="#about">The person</a
+        ><a class="contact-link" href="mailto:shivam1720406@gmail.com"
+          >Let’s build <b>↗</b></a
+        >
+      </nav>
+    </header>
+    <main>
+      <section class="universe" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <i></i> AN INDEPENDENT MIND / AN OPEN BODY OF WORK
+          </p>
+          <h1 id="hero-title">
+            Make<br /><em>possible</em><br />real<span class="period">.</span>
+          </h1>
+          <p class="hero-description">
+            I turn difficult questions into<br />software you can put your hands
+            on.
+          </p>
+          <a class="primary-link" href="#work"
+            >Find your way into the work <span>↘</span></a
+          >
+        </div>
+        <div class="engine-stage" id="engine-stage">
+          <canvas
+            id="engine"
+            role="img"
+            aria-label="An interactive particle sculpture representing five themes in Shivam’s public work. Use the project index for the complete accessible collection."
+          ></canvas>
+          <div id="beacons" aria-label="Projects in the sculpture"></div>
+          <div class="engine-reticle" aria-hidden="true">
+            <span>+</span><span>+</span><span>+</span><span>+</span>
+          </div>
+          <p class="engine-fallback" id="fallback" hidden>
+            The project index below contains the complete collection. This
+            device could not start the interactive sculpture.
+          </p>
+        </div>
+        <div class="stage-label">
+          <span>FIG. 001</span><span>THE POSSIBILITY ENGINE</span
+          ><span class="live-dot">GENERATED IN YOUR BROWSER</span>
+        </div>
+        <div class="engine-toolbar" aria-label="Sculpture controls">
+          <div class="form-switch" role="group" aria-label="Sculpture form">
+            <button data-form="0" aria-pressed="true">01 / Orbit</button
+            ><button data-form="1" aria-pressed="false">02 / Weave</button
+            ><button data-form="2" aria-pressed="false">03 / Bloom</button>
+          </div>
+          <div class="motion-controls">
+            <button
+              id="motion"
+              aria-pressed="false"
+              aria-label="Pause sculpture"
+            >
+              Ⅱ</button
+            ><button id="reset" aria-label="Reset sculpture view">↺</button>
+          </div>
+        </div>
+        <div class="engine-note">
+          <span>DRAG TO TURN · SELECT A SIGNAL · CHANGE ITS FORM</span
+          ><span>48,000 particles. Every signal opens real source.</span>
+        </div>
+        <aside class="selected-project" aria-label="Selected project">
+          <div class="selected-kicker">
+            <span id="selected-theme">AGENT INFRASTRUCTURE</span
+            ><span id="selected-number">01 / 43</span>
+          </div>
+          <h2 id="selected-name">RepoGym</h2>
+          <p id="selected-description">
+            Turn any git repository into a verifiable environment for coding
+            agents.
+          </p>
+          <a id="selected-source" href="https://github.com/shi1720/repogym"
+            >Inspect the source <span>↗</span></a
+          >
+          <div class="selected-pager">
+            <span id="selected-language">PYTHON</span>
+            <div>
+              <button id="previous" aria-label="Select previous project">
+                ←</button
+              ><button id="next" aria-label="Select next project">→</button>
+            </div>
+          </div>
+        </aside>
+        <div class="hero-bottom">
+          <p>ENGINEER <span>×</span> BUILDER <span>×</span> CURIOUS HUMAN</p>
+          <a href="#work" aria-label="Explore the project index"
+            >SCROLL TO EXPLORE <span>↓</span></a
+          >
+        </div>
+      </section>
+      <section class="introduction section-shell">
+        <p class="eyebrow">THE QUESTION BEHIND THE WORK</p>
+        <div>
+          <h2>What happens<br />after <em>“what if”?</em></h2>
+          <p>
+            An agent loses a tool response. A clinic needs to trace a recalled
+            batch. Someone wants to return to a half-finished project. I build
+            the systems that help people take the next step — and the
+            experiments that show where those systems stop working.
+          </p>
+        </div>
+        <div class="index-stats">
+          <span><b>43</b>PUBLIC SOURCE PROJECTS</span
+          ><span><b>05</b>FIELDS OF INQUIRY</span
+          ><span><b>∞</b>REASONS TO KEEP BUILDING</span>
+        </div>
+      </section>
+      <section class="entry-points section-shell" aria-labelledby="entry-title">
+        <div class="section-title">
+          <p class="eyebrow">THREE DOORS IN</p>
+          <h2 id="entry-title">Follow your curiosity<span>↘</span></h2>
+        </div>
+        <div class="doors">
+          <a href="https://github.com/shi1720/repogym"
+            ><span class="door-number">01 / AGENT INFRASTRUCTURE</span>
+            <div class="door-art orbit-art" aria-hidden="true">
+              <i></i><i></i><i></i><b>↗</b>
+            </div>
+            <h3>Give an agent<br />a reality check.</h3>
+            <p>
+              RepoGym turns repositories into executable tasks. Toolstorm
+              injects failures. Casecrop finds the smallest trace that still
+              breaks.
+            </p>
+            <span class="door-link">Start with RepoGym <b>↗</b></span></a
+          ><a href="https://github.com/shi1720/Computer-Use-Automation-System"
+            ><span class="door-number">02 / USEFUL SYSTEMS</span>
+            <div class="door-art grid-art" aria-hidden="true">
+              <i></i><i></i><i></i><b>↗</b>
+            </div>
+            <h3>Make difficult<br />work move.</h3>
+            <p>
+              Swivel learns a job in a legacy application, then replays it with
+              explicit outcomes, recovery and a real human takeover path.
+            </p>
+            <span class="door-link">Explore Swivel <b>↗</b></span></a
+          ><a href="https://github.com/shi1720/RevenueCat-Shipaton"
+            ><span class="door-number">03 / HUMAN EXPERIENCES</span>
+            <div class="door-art bloom-art" aria-hidden="true">
+              <i></i><i></i><i></i><b>↗</b>
+            </div>
+            <h3>Build around<br />being human.</h3>
+            <p>
+              Unpause leaves you a way back to unfinished creative work. A place
+              for the next small action, with your progress kept on your device.
+            </p>
+            <span class="door-link">Meet Unpause <b>↗</b></span></a
+          >
+        </div>
+      </section>
+      <section
+        id="work"
+        class="work section-shell"
+        aria-labelledby="work-title"
+      >
+        <div class="section-title">
+          <p class="eyebrow">
+            THE COMPLETE PUBLIC COLLECTION / VERIFIED SEPTEMBER 2026
+          </p>
+          <h2 id="work-title">
+            An index of<br /><em>things made real.</em><sup>43</sup>
+          </h2>
+        </div>
+        <div class="index-controls">
+          <div
+            id="themes"
+            role="group"
+            aria-label="Filter projects by theme"
+          ></div>
+          <label class="search"
+            >Find something<input
+              id="search"
+              type="search"
+              placeholder="A name, problem or language…"
+              autocomplete="off"
+          /></label>
+        </div>
+        <p id="results" role="status" aria-live="polite"></p>
+        <div id="project-list" class="project-list"></div>
+        <noscript
+          ><p>
+            <a
+              href="https://github.com/shi1720/shi1720/blob/main/docs/universe.md"
+              >Read the complete project index on GitHub.</a
+            >
+          </p></noscript
+        >
+      </section>
+      <section class="colophon section-shell" aria-labelledby="colophon-title">
+        <div>
+          <p class="eyebrow">OPEN THE MACHINE</p>
+          <h2 id="colophon-title">Yes, it’s<br /><em>all code.</em></h2>
+        </div>
+        <div>
+          <p>
+            The sculpture is drawn from 48,000 particles with a small WebGL
+            shader. Change its form and every point finds a new place. The 43
+            signals are public repositories, grouped by theme.
+          </p>
+          <p>
+            Geometry is expressive. Position and motion don’t claim code
+            quality, dependencies or live activity. Every project has its own
+            documented scope and limitations.
+          </p>
+          <div class="colophon-links">
+            <a href="https://github.com/shi1720/shi1720/tree/main/atlas"
+              >Read the source ↗</a
+            ><a href="city/">Visit the earlier city ↗</a
+            ><button id="download">Save this frame ↓</button>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about section-shell">
+        <p class="eyebrow">THE PERSON AT THE KEYBOARD</p>
+        <h2>Shivam Gupta<span>↗</span></h2>
+        <div class="about-grid">
+          <p class="about-lede">
+            Applied AI engineer.<br />Product builder.<br />Founder, Siloed.
+          </p>
+          <div>
+            <p>
+              I work from the first customer conversation through architecture,
+              implementation, evaluation and deployment. My work spans
+              education, enterprise systems and the useful ideas in between.
+            </p>
+            <p>
+              Based in Dubai. Open to applied AI and product engineering roles,
+              remote work, relocation and ambitious collaborations.
+            </p>
+            <div class="about-links">
+              <a href="https://shivamgupta.web.app/">Enter my studio ↗</a
+              ><a href="https://www.linkedin.com/in/shivamgupta-ai/"
+                >LinkedIn ↗</a
+              ><a href="mailto:shivam1720406@gmail.com"
+                >Start a conversation ↗</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="section-shell">
+      <span>© 2026 SHIVAM GUPTA</span
+      ><span>USEFUL SYSTEMS. THOUGHTFUL PRODUCTS. INSPECTABLE WORK.</span
+      ><a href="#">BACK TO THE ENGINE ↑</a>
+    </footer>
+    <script type="module" src="observatory.js"></script>
+  </body>
+</html>

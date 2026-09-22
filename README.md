@@ -1,8 +1,8 @@
-<a href="https://shivamgupta.web.app"><img src="assets/studio.svg" alt="Enter Shivam Gupta's interactive studio: projects, AI guide, and a working agent lab" width="100%"></a>
+<a href="https://shi1720.github.io/shi1720/"><img src="assets/engine.svg" alt="Shivam Gupta — Make possible real. Enter the Possibility Engine: 43 public source projects, five fields of inquiry, and an interactive particle sculpture." width="100%"></a>
 
 <p align="center">
-  <a href="https://shivamgupta.web.app"><strong>Enter the studio ↗</strong></a> &nbsp; · &nbsp;
-  <a href="https://shivamgupta.web.app/#work">Explore the work</a> &nbsp; · &nbsp;
+  <a href="https://shi1720.github.io/shi1720/"><strong>Enter the Possibility Engine ↗</strong></a> &nbsp; · &nbsp;
+  <a href="https://shi1720.github.io/shi1720/#work">Explore 43 projects</a> &nbsp; · &nbsp;
   <a href="https://shivamgupta.web.app/#lab">Run the agent lab</a> &nbsp; · &nbsp;
   <a href="https://www.linkedin.com/in/shivamgupta-ai/">LinkedIn</a> &nbsp; · &nbsp;
   <a href="mailto:shivam1720406@gmail.com">Email</a>
@@ -16,7 +16,9 @@ A recurring question in my work: **what happens when the happy path ends?** An a
 
 The **[studio](https://shivamgupta.web.app)** lets you explore a folded 3D map of my projects, ask a source-grounded AI guide about the work, and run a local agent-reliability experiment. The Python export reproduces what the browser shows.
 
-An earlier creative-coding experiment, the **[Working Atlas](https://shi1720.github.io/shi1720/)**, remains available: an interactive city generated from the same public project collection. [How it works →](atlas/README.md)
+**[The Possibility Engine](https://shi1720.github.io/shi1720/)** turns my public work into a kinetic, explorable sculpture: 48,000 particles, three forms, and 43 project signals. Drag it, reshape it, follow a thread into the source, or save your own frame. Built with a small WebGL renderer and an accessible project index. **[How it works →](atlas/ENGINE.md)**
+
+The earlier **[Working Atlas](https://shi1720.github.io/shi1720/city/)** remains available as a procedural city. Both exhibits use curated public projects; their geometry is expressive, not a claim about activity or quality.
 
 ### A few places to start
 
@@ -25,6 +27,8 @@ An earlier creative-coding experiment, the **[Working Atlas](https://shi1720.git
 | **Trustworthy agent evaluation** | [RepoGym](https://github.com/shi1720/repogym) · [RepoGauntlet](https://github.com/shi1720/repo-gauntlet) | Executable repository tasks, broken and golden controls, reproducible evaluation. |
 | **Finding the smallest failure** | [Casecrop](https://github.com/shi1720/casecrop) | Reduce an event trace while preserving dependencies and the same failure. |
 | **Agents under pressure** | [Toolstorm](https://github.com/shi1720/toolstorm) | Deterministic tool failures, side-effect contracts, strict offline replay. |
+| **AI operating legacy software** | [Swivel](https://github.com/shi1720/Computer-Use-Automation-System) | Model discovery, typed capabilities, deterministic replay and live human handoff. |
+| **Research you can reproduce** | [Personal AI Memory](https://github.com/shi1720/personal-ai-memory-studies) · [Tool Cache Coupling](https://github.com/shi1720/tool-cache-coupling) | Controlled studies, explicit limitations, inspectable methods and negative results. |
 | **Useful voice workflows** | [Benchback](https://github.com/shi1720/AssemblyAI) · [OffHire](https://github.com/shi1720/OffHire) | Parts-core returns and equipment closeouts, with transcript-grounded evidence. |
 | **Software with a human point of view** | [Unpause](https://github.com/shi1720/RevenueCat-Shipaton) · [Plot Twist](https://github.com/shi1720/plottwist) | Resume an unfinished creative project, or meet a personality quiz that shows its working. |
 | **Repair you can inspect** | [StepFree](https://github.com/shi1720/stepfree) | Accessibility fixes with independent scans, content-integrity checks, and review. |
