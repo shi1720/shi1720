@@ -2,7 +2,7 @@
 
 A navigable city of Shivam Gupta's public software projects. Each building links to a real repository; districts organize projects by theme. The city is a visual index, not a dependency graph or a live activity monitor.
 
-[Explore the atlas](https://shi1720.github.io/shi1720/).
+[Explore the atlas](https://shi1720.github.io/shi1720/city/).
 
 ## How it works
 
@@ -18,7 +18,7 @@ From the repository root:
 
 ```sh
 python3 -m http.server 8765 --bind 127.0.0.1
-# Open http://127.0.0.1:8765/atlas/
+# Open http://127.0.0.1:8765/atlas/city/
 ```
 
 ```sh
